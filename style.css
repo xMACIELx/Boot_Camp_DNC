@@ -5,6 +5,8 @@ body{
     background-repeat: no-repeat;
 }
 
+/* Barra de Navegação */
+
 #principal {
     width: 100%;
     height: 100px;
@@ -52,3 +54,112 @@ body{
     #principal button:hover {
         background-color: #0b5bc4;
     }
+
+
+/* Seção Principal */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+}
+
+/* Header */
+
+    section header{
+        color: white;
+        font-family: "Inter", sans-serif;
+    }
+
+        section header h1{
+            text-align: center;
+            font-size: 80px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        section header h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 120px;
+        }
+
+            section header h2 .textDestac{
+                background-color: rgb(20, 20, 20);
+                font-weight: 600;
+                padding: 2px 5px 2px 5px;
+            }
+    
+
+/* Form */
+
+    section form {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        width: 600px;
+    }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+            .form input {
+                border-radius: 10px;
+                border: none;
+                height: 45px;
+                font-size: 20px;
+                font-weight: 400;
+                padding-left: 8px;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+                .form input::placeholder{
+                    color: rgba(57, 57, 57, 0.5);
+                }
+
+            .form label {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .form .checkbox{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+                .form .checkbox label{
+                    font-family: "Inter", sans-serif;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+                .form .checkbox input {
+                    transform: scale(1.6);
+                }
+
+                section form input[type="submit"] {
+                    background-color: rgba(12, 112, 242, 0.9);
+                    color: rgba(255, 255, 255, 1);
+                    width: 100%;
+                    height: 56px;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 32px;
+                    font-weight: 600;
+                    margin-top: 70px;
+                    box-shadow: 4px 6px 4px 0px #0C70F240;
+                    cursor: pointer;
+                }
+
+                section form input[type="submit"]:hover{
+                    background-color: rgba(9, 91, 199, 0.9);
+                    color: rgb(218, 218, 218);
+                }
