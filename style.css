@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(180deg , rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background: linear-gradient(180deg , rgba(12, 112, 242, 0.5) 26%, rgba(12, 112, 242, 0) 35%), #303030;
     background-repeat: no-repeat;
 }
 
@@ -129,13 +129,13 @@ section {
                 margin-bottom: 10px;
             }
 
-            .form .checkbox{
+            .form .checkbox {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
             }
 
-                .form .checkbox label{
+                .form .checkbox label {
                     font-family: "Inter", sans-serif;
                     font-size: 25px;
                     font-weight: 600;
@@ -163,6 +163,8 @@ section {
                     background-color: rgba(9, 91, 199, 0.9);
                     color: rgb(218, 218, 218);
                 }
+
+/* Footer */
 
 footer {
     width: 100%;
@@ -248,3 +250,66 @@ footer {
                 border-right: 3px solid white;
             }
 
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background: linear-gradient(180deg , rgba(12, 112, 242, 0.5) 25%, rgba(12, 112, 242, 0) 30%), #303030;
+    }
+    
+        #principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+
+        #menuSuperior {
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        #menuSuperior a {
+            height: 50px;
+            align-items: center;
+        }
+
+        #principal button {
+            margin: 0px 0px 5px 0px;
+            width: 98%;
+        }
+
+        /* Seção Principal */
+
+        section {
+            margin-top: 50px;
+        }
+
+            section header h1 {
+                font-size: 38px;
+            }
+
+            section header h2 {
+                font-size: 26px;
+                padding: 0px 15px 0px 15px;
+            }
+
+            section form {
+                width: 95%;
+                font-size: 20px;
+            }
+
+            .form .checkbox label {
+                font-size: 17px;
+            }
+
+        /* Footer */
+
+        footer #parte01 {
+            flex-direction: column;
+        }
+
+        footer #parte01 #endereço {
+            font-size: 19px;
+        }
+}
